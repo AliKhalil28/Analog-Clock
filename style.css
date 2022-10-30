@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav bar  */
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 40px;
+    padding: 0 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.socail {
+    display: flex;
+    align-items: center;
+}
+
+.socail ul li img {
+    width: 34px;
+    border-radius: 23px;
+}
+
+.socail ul li img:hover {
+    transform: scale(1.1);
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+
+/* Main body  */
+#clock-container {
+    position: relative;
+    margin: 10px auto;
+    height: 40vw;
+    width: 40vw;
+    background: url('clock.png') no-repeat;
+    background-size: cover;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.3%;
+    height: 27%;
+    top: 23%;
+    left: 49.42%;
+}
+
+#minute {
+    width: 0.7%;
+    height: 32%;
+    top: 18%;
+    left: 49.7%;
+}
+
+#second {
+    width: 0.5%;
+    height: 35%;
+    top: 15%;
+    left: 49.8%;
+
+}
